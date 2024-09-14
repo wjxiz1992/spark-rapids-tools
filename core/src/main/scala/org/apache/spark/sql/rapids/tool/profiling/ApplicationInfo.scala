@@ -36,8 +36,8 @@ class SparkPlanInfoWithStage(
     metadata: scala.Predef.Map[String, String],
     metrics: Seq[SQLMetricInfo],
     val stageId: Option[Int],
-    planId: Int = 0,) extends SparkPlanInfo(nodeName, simpleString, children,
-  metadata, metrics) {
+    planId: Int = 0) extends SparkPlanInfo(nodeName, simpleString, children,
+  metadata, metrics, planId) {
 
   import SparkPlanInfoWithStage._
 
